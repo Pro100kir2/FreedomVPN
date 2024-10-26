@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрируем содержимое по горизонтали */
+    justify-content: center; /* Центрируем содержимое по вертикали */
+    height: 100vh; /* Задаем высоту вьюпорта */
+}
+
+header {
+    background: #007bff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 100%; /* Ширина заголовка */
+    position: fixed; /* Фиксируем заголовок в верхней части страницы */
+    top: 0; /* Устанавливаем верхнюю границу */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 80px 20px 20px; /* Отступы для учета фиксированного заголовка */
+    display: none; /* Скрываем основной контент по умолчанию */
+    flex-direction: column;
+    align-items: center; /* Центрируем содержимое по горизонтали */
+}
+
+section {
+    margin: 20px 0;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px; /* Ширина секций */
+}
+
+h2 {
+    color: #007bff;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #218838;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #007bff;
+    color: #fff;
+    position: absolute; /* Фиксируем внизу страницы */
+    bottom: 0;
+    width: 100%; /* Ширина футера */
+}
+
